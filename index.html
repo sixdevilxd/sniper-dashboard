@@ -1,0 +1,17 @@
+<script>
+
+async function testAPI(){
+
+const res = await fetch(
+"https://api.dexscreener.com/latest/dex/search?q=PEPE"
+);
+
+const data = await res.json();
+
+console.log(data);
+
+}
+
+testAPI();
+
+</script>
